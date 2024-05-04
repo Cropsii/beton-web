@@ -3,10 +3,9 @@
     --orange-ligth: #ffe1a6;
     --green: #34ca00;
 }
-* {
-    /* border: 1px solid; */
-}
+
 body {
+    position: relative;
     color: white;
     font-family: "Montserrat", sans-serif;
     height: 100dvh;
@@ -14,6 +13,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     background: black;
     color: white;
@@ -26,11 +26,10 @@ header {
 nav {
     z-index: 100;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     position: fixed;
     margin: 1rem;
-    padding: 3px;
+    padding: 8px;
     border-radius: 100px;
     background-color: hsl(40, 46%, 57%, 80%);
     backdrop-filter: blur(3px);
@@ -40,14 +39,18 @@ nav img {
     max-width: 50px;
 }
 
+nav img:nth-child(3) {
+    visibility: hidden;
+}
+
 nav ul {
+    padding: 0px;
     display: flex;
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
-    padding: 0 10px;
+    padding: 0 25px;
 }
 
 nav ul li a {
@@ -60,18 +63,20 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
 }
+
 .hero {
-    padding: 5rem 3rem 0rem;
+    padding: 6rem  0rem;
     position: relative;
     background: black;
-    height: calc(1080px - 5rem);
+    height: calc(1080px - 6rem);
 }
-.hero-logo {
-    /* position: absolute; */
-    width: 50%;
+.hero-logo{
+    max-width: 40%;
+    /* width: 40%; */
 }
 .call {
-    /* position: absolute; */
+    right: 1rem;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,16 +85,50 @@ nav ul li a:hover {
     padding: 1rem;
     border-radius: 50%;
 }
+
 .call img {
     width: 50px;
 }
 
 .wrap {
+    margin: 0rem 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+.wrap h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.logotip {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.hero-info {
+    width: 100%;
+    margin: 0;
+}
+
+.wrap span {
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.content img {
+    height: 90%;
+    aspect-ratio: 1;
+}
+
+.first {
     display: flex;
     flex-direction: column;
-}
-.content {
-    margin: 1rem;
-    display: flex;
-    gap: 1rem;
+    gap: 7rem;
 }
