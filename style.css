@@ -13,7 +13,10 @@ body {
     box-sizing: border-box;
     background: black;
 }
-
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
 header {
     display: flex;
     justify-content: center;
@@ -68,7 +71,7 @@ nav ul li a:hover {
 .hero-logo {
     right: 6rem;
     position: absolute;
-    max-width: 40%;
+    max-width: 35%;
     transition: ease-in-out 0.3s;
 }
 .hero-logo:hover {
@@ -87,12 +90,15 @@ nav ul li a:hover {
     padding: 1rem;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px var(--green);
+    transition: ease-in-out 0.1s;
 }
 
 .call img {
     width: 50px;
 }
-
+.call:active{
+    scale: 1.2;
+}
 .wrap {
     margin: 6rem 2rem;
     display: flex;
@@ -319,6 +325,13 @@ h1 span {
     display: flex;
     justify-content: space-around;
 }
+.small-menu button {
+    transition: ease-in-out 0.1s;
+}
+.small-menu button:active {
+    scale: 0.95;
+    opacity: 0.7;
+}
 .cart h1 {
     font-size: larger;
     font-weight: bold;
@@ -391,6 +404,18 @@ input {
 }
 /* phone style */
 @media screen and (max-width: 1000px) {
+    br{
+        display: none;
+    }
+    h1,h2{
+        font-size: initial;
+    }
+    span{
+        font-size: initial;
+    }
+    p{
+        font-size: initial;
+    }
     .wrap {
         gap: 2rem;
         text-align: center;
@@ -404,7 +429,10 @@ input {
     }
     .wrap h1 {
         order: 1;
-        font-size: initial;
+        font-size: 150%;
+    }
+    .wrap span {
+        font-size: large;
     }
     .hero-logo {
         max-width: 100%;
@@ -440,5 +468,54 @@ input {
     .wrap-button {
         order: 4;
         padding: 2%;
+    }
+    .call img {
+        width: 1rem;
+    }
+    #information .cover {
+        flex-direction: column;
+    }
+    .slog {
+        font-size: initial;
+        order: 1;
+    }
+    #information h1 {
+        font-size: initial;
+    }
+    #information span {
+        font-size: initial;
+    }
+    .menu {
+        order: 2;
+    }
+    .menu li {
+        gap: 1rem;
+    }
+    #choose h1{
+        font-size: initial;
+    }
+    #choose span{
+        font-size: initial;
+    }
+    .obj{
+        width: auto;
+    }
+    #garant h1{
+        font-size: initial;
+        width: auto;
+    }
+    .t-zone{
+        font-size: initial;
+    }
+    .cart{
+        width: auto;
+    }
+    .component h1{
+        text-align: center;
+    }
+    .wrap-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
