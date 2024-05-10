@@ -452,6 +452,7 @@ input {
         align-items: center;
     }
     nav {
+        margin: 10px;
         justify-content: space-between;
     }
     nav ul {
