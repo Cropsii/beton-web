@@ -362,8 +362,7 @@ h1 span {
 }
 .con-logo {
     justify-self: center;
-    width: 50%;
-    aspect-ratio: 1;
+    /* width: 50%; */
 }
 
 .component h1 {
