@@ -307,7 +307,7 @@ h1 span {
     align-items: stretch;
     gap: 10rem;
 }
-#cost h1 {
+#cost h1:not(.cart h1) {
     font-size: xx-large;
 }
 .cart {
