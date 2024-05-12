@@ -363,6 +363,7 @@ h1 span {
 .con-logo {
     justify-self: center;
     width: 50%;
+    aspect-ratio: 1;
 }
 
 .component h1 {
@@ -566,6 +567,7 @@ input {
         margin: 10%;
     }
     .obj img {
+        aspect-ratio: 1;
         width: 60%;
     }
     .obj h1 {

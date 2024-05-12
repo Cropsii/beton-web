@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0 25px;
+    padding: 0 10px;
 }
 
 nav ul li a {
@@ -60,9 +60,10 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
 }
-#ifo-table {
+#info-table {
+    width: 100%;
     height: 60dvh;
-    display: flex;
+    display: flex;flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -72,26 +73,36 @@ table button {
     gap: 10%;
 }
 table button {
-    background: black;
-    color: white;
-    border: 1px solid var(--orange-ligth);
+    background: transparent;
+    color: black;
+    border: 1px solid black;
     transition: ease-in-out 0.2s;
 }
-table button:hover {
-    background: var(--orange-dark);
-    box-shadow: 0 0 10px 5px var(--orange-dark);
-    border: 1px solid transparent;
-}
+
 table button {
     display: inline;
 }
-table button:active{
-    scale: 0.94;
+table button:active {
+    scale: 0.90;
     opacity: 0.8;
-    
 }
-th{
+table {
+    width: 70%;
+    color: black;
+    background: rgb(255, 255, 255);
+}
+th {
+    color: rgb(255, 255, 255);
+    background: var(--orange-dark);
     text-align: left;
+    padding: 2%;
+}
+tr{
+    background: var(--orange-ligth);
+}
+td{
+    
+    padding: 2%;
 }
 .wrap {
     display: flex;
@@ -99,10 +110,13 @@ th{
     justify-content: space-between;
 }
 #contacts {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(18, 18, 18);
 }
 .wrap-cont {
+    width: 90%;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
