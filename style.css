@@ -14,8 +14,8 @@ body {
     background: black;
 }
 img {
-  max-inline-size: 100%;
-  block-size: auto;
+    max-inline-size: 100%;
+    block-size: auto;
 }
 header {
     display: flex;
@@ -96,7 +96,7 @@ nav ul li a:hover {
 .call img {
     width: 50px;
 }
-.call:active{
+.call:active {
     scale: 1.2;
 }
 .wrap {
@@ -297,6 +297,7 @@ h1 span {
 }
 #cost {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -305,6 +306,9 @@ h1 span {
     justify-content: center;
     align-items: stretch;
     gap: 10rem;
+}
+#cost h1 {
+    font-size: xx-large;
 }
 .cart {
     text-wrap: pretty;
@@ -319,6 +323,7 @@ h1 span {
 }
 .cart img {
     max-width: 100%;
+    display: block;
 }
 .small-menu {
     font-size: larger;
@@ -346,6 +351,7 @@ h1 span {
 #contacts {
     background: rgb(18, 18, 18);
 }
+
 .wrap-cont {
     padding: 4rem;
     display: grid;
@@ -357,6 +363,7 @@ h1 span {
 .con-logo {
     justify-self: center;
     width: 50%;
+    aspect-ratio: 1;
 }
 
 .component h1 {
@@ -404,16 +411,17 @@ input {
 }
 /* phone style */
 @media screen and (max-width: 1000px) {
-    br{
+    br {
         display: none;
     }
-    h1,h2{
+    h1,
+    h2 {
         font-size: initial;
     }
-    span{
+    span {
         font-size: initial;
     }
-    p{
+    p {
         font-size: initial;
     }
     .wrap {
@@ -492,31 +500,115 @@ input {
     .menu li {
         gap: 1rem;
     }
-    #choose h1{
+    #choose h1 {
         font-size: initial;
     }
-    #choose span{
+    #choose span {
         font-size: initial;
     }
-    .obj{
+    .obj {
         width: auto;
     }
-    #garant h1{
+    #garant h1 {
         font-size: initial;
         width: auto;
     }
-    .t-zone{
+    .t-zone {
         font-size: initial;
     }
-    .cart{
-        width: auto;
+    .cart {
+        width: 90%;
     }
-    .component h1{
+    .component h1 {
         text-align: center;
     }
-    .wrap-cont{
+    .wrap-cont {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #information h1 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        line-height: normal;
+        font-size: xx-large;
+        text-align: center;
+    }
+    #information span {
+        font-size: xx-large;
+    }
+
+    #information .slog {
+        gap: 1rem;
+        align-items: center;
+    }
+    #information .cover {
+        align-items: center;
+    }
+    .pointer {
+        height: 30px;
+        display: block;
+    }
+    .menu p {
+        font-size: inherit;
+    }
+    #information ul {
+        gap: 2rem;
+    }
+    #choose h1 {
+        font-size: larger;
+        margin: 10% 0 0 0;
+    }
+    #choose span {
+        font-size: x-large;
+    }
+    #choose .wrap {
+        gap: 2rem;
+        margin: 10%;
+    }
+    .obj img {
+        width: 60%;
+    }
+    .obj h1 {
+        font-size: large;
+    }
+    .obj p {
+        font-size: small;
+    }
+    #garant .wrap {
+        width: 90%;
+        margin: 5%;
+        text-align: inherit;
+        align-items: flex-start;
+    }
+    #garant {
+        align-items: flex-start;
+    }
+    #garant h1 {
+        font-size: large;
+        width: 70%;
+    }
+    .t-zone {
+        margin: 5%;
+        padding: 5%;
+        width: auto;
+    }
+    #cost .wrap {
+        align-items: center;
+        margin: 1rem 2rem 1rem 2rem;
+        gap: 1.5rem;
+    }
+    .wrap h1 {
+        font-size: inherit;
+    }
+    .cart button {
+        width: auto;
+        font-size: initial;
+    }
+    .cart h1 {
+        order: initial;
+    }
+    #cost h1 {
+        font-size: initial;
     }
 }
