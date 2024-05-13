@@ -107,9 +107,20 @@
 
                 <div class="write-us">
                     <p>НАПИШИТЕ НАМ</p>
-                    <input placeholder="email" />
-                    <input placeholder="Ваше сообщение" />
-                    <button class="send">Отправить</button>
+                    <form
+                        action="mailto:soap.duskyla.81@mail.ru"
+                        method="post"
+                        enctype="text/plain"
+                    >
+                        <input
+                            type="email"
+                            value="sibbetonirk@gmail.ru"
+                            readonly
+                            placeholder="email"
+                        />
+                        <input type="text" placeholder="Ваше сообщение" />
+                        <button class="send">Отправить</button>
+                    </form>
                 </div>
             </div>
         </section>

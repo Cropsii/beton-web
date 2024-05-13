@@ -67,9 +67,24 @@
                             />
                         </div>
                         <div class="wrap-button">
-                            <button>О нас</button>
-                            <button>Купить бетон</button>
-                        </div>
+    <button>О нас</button>
+    <button id="buyConcreteBtn">Купить бетон</button>
+</div>
+
+<dialog id="myModal">
+        <div class="write-us">
+            <div class="close">
+                <p>Обратная свяязь</p>
+                <button id="closeDialogBtn">X</button>
+                </div>
+                <form action="mailto:sibbetonirk@gmail.ru" method="post" enctype="text/plain">
+    <input type="email" value="sibbetonirk@gmail.ru" readonly placeholder="email" />
+    <input type="text" placeholder="Ваше сообщение" />
+    <button class="send">Отправить</button></form>
+
+    </div>
+</dialog>
+
                         <img
                             class="hero-logo"
                             src="images/logo (Среднее).png"
@@ -238,14 +253,15 @@
                 <img class="con-logo" src="images/logo (Среднее).png" alt="logo" />
 
             <div class="write-us">
-                <form action="mailto:soap.duskyla.81@mail.ru" method="post" enctype="text/plain">
-    <p>НАПИШИТЕ НАМ</p>
+                <p>НАПИШИТЕ НАМ</p>
+                <form action="mailto:sibbetonirk@gmail.ru" method="post" enctype="text/plain">
     <input type="email" value="sibbetonirk@gmail.ru" readonly placeholder="email" />
     <input type="text" placeholder="Ваше сообщение" />
-    <button class="send">Отправить</button>
+    <button class="send">Отправить</button></form>
 </div>
 
             </div>
         </section>
+          <script src="script.js"></script>
     </body>
 </html>

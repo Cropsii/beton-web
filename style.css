@@ -153,6 +153,27 @@ nav ul li a:hover {
     box-shadow: 0 0 10px 5px var(--orange-dark);
     border: 0px solid transparent;
 }
+dialog{
+    background: var(--orange-dark);
+    opacity: 0.8;
+    border-radius: 25px;
+    color: white;
+    border: 0px;
+}
+dialog p{
+    margin: 1rem;
+}
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closeDialogBtn{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: 0px;
+}
 #information {
     display: flex;
     align-items: center;
@@ -385,7 +406,8 @@ h1 span {
     align-items: center;
     gap: 1rem;
 }
-form{
+form {
+    width: 60%;
     display: flex;
     gap: 1rem;
     flex-direction: column;
