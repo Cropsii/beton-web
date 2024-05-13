@@ -385,6 +385,12 @@ h1 span {
     align-items: center;
     gap: 1rem;
 }
+form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
 input {
     padding: 1rem;
     background: black;
